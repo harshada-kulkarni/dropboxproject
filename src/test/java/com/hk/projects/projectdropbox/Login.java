@@ -16,9 +16,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
 public class Login {
 
-	@Test
+	@Test(enabled = false)
 	public void openDropBox() throws InterruptedException, AWTException {
 		System.setProperty("webdriver.chrome.driver", "C:/Users/Harsha/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Dropbox Demo" verbose="10">
+  <parameter name="dropbox.email" value="put.dropbox@email.here" />
+  <parameter name="dropbox.password" value="putDropboxPasswordHere" />
+
+  <test name="DropboxTest" preserve-order="true">
+    <classes>
+      <class name="testcases.DropboxTest">
+        <methods>
+          <include name="openDropboxHomepage" />
+          <include name="gotoToSignin" />
+          <include name="signin" />
+          <include name="uploadFile" />
+          <include name="createFolder" />
+          <include name="cleanUp" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

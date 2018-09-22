@@ -14,7 +14,7 @@ public class Home {
 		
 	}
 	
-	public WebElement getSignInLink() {
+	public WebElement signInField() {
 	
 		WebElement signInLink = driver.findElement(By.cssSelector("a.sign-in.button-link"));
 		return signInLink;
