@@ -103,6 +103,11 @@ public class DropboxTest {
 		robot.keyPress(KeyEvent.VK_E);
 		robot.keyPress(KeyEvent.VK_S);
 		robot.keyPress(KeyEvent.VK_T);
+		
+		robot.keyPress(KeyEvent.VK_DECIMAL);
+		robot.keyPress(KeyEvent.VK_T);
+		robot.keyPress(KeyEvent.VK_X);
+		robot.keyPress(KeyEvent.VK_T);
 
 		robot.keyPress(KeyEvent.VK_ENTER);
 
@@ -112,7 +117,7 @@ public class DropboxTest {
 
 		// Validate pop-up message
 		String actualMessage = files.fileUploadPopupTextField().getText();
-		assertTrue(actualMessage.toLowerCase().contains("uploaded")); //TODO : find why this fails
+		assertTrue(actualMessage.toLowerCase().contains("uploaded")); 
 
 		// Close the File Upload pop-up
 		files.fileUploadPopupCloseButton().click();
